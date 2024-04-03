@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<title>Jack Daly</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="encom-globe.min.js"></script>
+	<script src="grid.js"></script>
+	<script src="project_data.js"></script>
+
+</head>
+
+<body>
+	<h1 id="intro">{ }</h1>
+	<div id="main">
+		<h2>I'm a <span id="age"></span> cybersecurity/data science professional</h2>
+		<h2>who does
+			<span class="lang-button" style="color:#90c53f;" data-panel="pentest">pen testing<span class="underline"
+					style="background-color:#90c53f;"></span></span>,
+			<span class="lang-button" style="color: #5ec9f8;" data-panel="cybersecurity">security infastrcutre<span class="underline"
+					style="background-color:#5ec9f8;"></span></span>,
+			<span class="lang-button" style="color: #f16529;" data-panel="python">Python programming<span class="underline"
+					style="background-color:#f16529;"></span></span>, and
+			<span class="lang-button" style="color: #ffdd48;" data-panel="others">other stuff<span class="underline"
+					style="background-color:#ffdd48;"></span></span>!
+		</h2>
+        
+		<svg id="linedown">
+			<line x1=0 y1=0 x2=0 y2=100>
+		</svg>
+		<span id="langhint">(click to view details)</span>
+		<svg id="rect">
+			<path id="rectleft" />
+			<path id="rectright" />
+		</svg>
+		<div id="pentest" class="lang-panel">
+			<h2><a>Penetration Testing</a></h2>
+			<h3 class="lang-desc">Pen testing is how I fell in love with <span>cybersecurity</span>. I almost
+				exclusivley use <a href="https://www.kali.org/" target="_blank">Kali</a>. I've been using
+				it for about <span>4 years</span> now, and I'd call myself <span>proficient</span>.
+			</h3>
+			<div class="projects pentest" data-cat="pentesting">
+				<div data-proj="tryhackme" class="proj" style="background-image: url(img/THMlogo.png)">
+					<h3>Tryhackme</h3>
+				</div>
+				<div data-proj="7on11" class="proj" style="background-image: url(img/7on11.png)">
+					<h3>7 on 11</h3>
+				</div>
+				<div data-proj="hackerone" class="proj" style="background-image: url(img/hackerone.png)">
+					<h3>Hackerone</h3>
+				</div>
+			</div>
+		</div>
+		<div id="cybersecurity" class="lang-panel">
+			<h2><a>security infastrcutre</a></h2>
+			<h3 class="lang-desc">I have taken many classes and have worked in cybersecurity, specfically in
+				security compliance (<span>NIST</span> and <span>CMMC</span>), <span>cloud computing</span>, and 
+				general <span>networking</span> practices and configurations.
+			</h3>
+			<div class="projects cybersecurity" data-cat="cybersecurity">
+				<div data-proj="dunabase" class="proj" style="background-image: url(img/solerity.png)">
+					<h3>Solerity</h3>
+				</div>
+				<div data-proj="source_mobile" class="proj" style="background-image: url(img/cedar.png)">
+					<h3>Cedar</h3>
+				</div>
+				<div data-proj="repertoire" class="proj" style="background-image: url(img/homelab.png)">
+					<h3>Home Lab</h3>
+				</div>
+			</div>
+		</div>
+		<div id="python" class="lang-panel">
+			<h2><a>Python</a></h2>
+			<h3 class="lang-desc">My first venture into programming, when I was <span>12 years old</span>, was a
+				horrible attempt at making a mod for a game I used to play. Since then, I've gotten just a <i>bit</i>
+				better since then &ndash; I still try to learn more and more every time a I code, 
+				but I'd like to think I'm <span>proficient</span>. 
+			</h3>
+			<div class="projects python" data-cat="python">
+				<div data-proj="makemehappy" class="proj" style="background-image: url(img/avendra.png)">
+					<h3>Avendra</h3>
+				</div>
+				<div data-proj="portfolio" class="proj" style="background-image: url(img/NN.png)">
+					<h3>Neural Networks</h3>
+				</div>
+				<div data-proj="minesweeper_f" class="proj" style="background-image: url(img/viz.png)">
+					<h3>Visualiztion</h3>
+				</div>
+			</div>
+		</div>
+		<div id="others" class="lang-panel">
+			<h2>Other skills</h2>
+			<h3 class="lang-desc">I've also worked in  <span>Java</span>, <span>C++</span>, and of course <span>HTML/CSS/JS</span>.
+				I try to keep myself busy with projects, like this <span>website</span> I made from scratch! The tech world
+				moves very fast so I try my best to always keep up with it as best I can.
+			</h3>
+			<div class="projects others" data-cat="others">
+				<div data-proj="antislouch" class="proj" style="background-image: url(img/favicon_alt.ico)">
+					<h3>Website</h3>
+				</div>
+				<div data-proj="reqlang" class="proj" style="background-image: url(img/tutor.png)">
+					<h3>Tutoring</h3>
+				</div>
+				<div data-proj="ognes" class="proj" style="background-image: url(img/bomblab.png)">
+					<h3>Bomb Lab</h3>
+				</div>
+			</div>
+		</div>
+		<div id="details">
+			<h2>Check out my <a href="https://github.com/Presthon" class="d" target="_blank"
+					style="color:#949494;">GitHub<span class="underline" style="background-color:#949494;"></span></a> and <a href="https://tryhackme.com/p/JupJup" class="d" target="_blank" style="color:#949494;">Tryhackme<span class="underline" style="background-color:#949494;"></span></a>.</h2>
+			<br>
+			<h2 id="lastseen"></h2>
+			<h2>Business inquiry? <a href="mailto:jackprestondaly11@gmail.com" class="d" target="_blank" style="color:#949494;">Email me!<span class="underline"
+						style="background-color:#949494;"></span></a></h2>
+		</div>
+		<div id="modal">
+			<h2></h2>
+			<p></p>
+			<div>
+				<a target="_blank"><img src="img/favicon_alt.ico"></a>
+			</div>
+			<div class="close">X</div>
+		</div>
+         
+	</div>
+   
+    <script src="script.js"></script>
+	<script type="text/javascript" src="langs.js"></script>
+	<script type="text/javascript" src="age.js"></script>
+	<script type="text/javascript" src="globe.js"></script>
+</body>
+</html>
